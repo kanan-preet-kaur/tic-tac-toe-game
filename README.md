@@ -16,7 +16,7 @@ A responsive, browser-based Tic Tac Toe game built with **HTML**, **CSS**, and *
 
 ## 📸 Demo
 
-![Tic Tac Toe Demo](Recording - Tic Tac Toe.gif) 
+![Tic Tac Toe Demo](Recording%20-%20Tic%20Tac%20Toe.gif) 
 
 ---
 
