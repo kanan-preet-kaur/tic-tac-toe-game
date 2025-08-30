@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game | Play Now</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>The Game of Tic Tac Toe</li>
+        </ul>
+    </nav>
+    <div class="loading-page loading screen">
+        <h1>Welcome to Tic Tac Toe!</h1>
+        <h2>Loading <span class="dots">...</span></h2>
+    </div>
+     
+    <div class="game-container playing screen">
+        <div class="container">
+            <div class="box bt-0 bl-0"><span class="box-text"></span></div>
+            <div class="box bt-0"><span class="box-text"></span></div>
+            <div class="box bt-0 br-0"><span class="box-text"></span></div>
+            <div class="box bl-0"><span class="box-text"></span></div>
+            <div class="box"><span class="box-text"></span></div>
+            <div class="box br-0"><span class="box-text"></span></div>
+            <div class="box bl-0 bb-0"><span class="box-text"></span></div>
+            <div class="box bb-0"><span class="box-text"></span></div>
+            <div class="box br-0 bb-0"><span class="box-text"></span></div>
+        </div>
+        <div class="game-info">
+            <div>
+                <span class="info">Turn for X</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="winner screen">
+        <h2 class="info"></h2>
+        <button id="reset">Play Again</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

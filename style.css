@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+}
+body{
+    overflow: hidden;
+    background-color: #F6EEE0;
+}
+nav{
+    background-color:#A45C40;
+    color: #F6EEE0;
+    height: 65px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 20px;
+}
+nav ul{
+    list-style-type: none;
+}
+.game-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows:repeat(3,10vw) ;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+    color: #A45C40;
+}
+.box:hover{
+    background-color: #e1bdab;
+}
+.game-info{
+    padding: 34px;
+}
+.info{
+    font-size: 30px;
+    font-weight: 600;
+    color: #A45C40;
+}
+.game-info h1{
+    font-family: "Chewy", system-ui;
+    font-size: 50px;
+    color: rgb(58, 6, 58);
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+.loading-page,.winner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    color: #A45C40;
+    background-color: #F6EEE0;
+    
+}
+.loading-page h1{
+    font-family: "Chewy", system-ui;
+    font-size: 5rem;
+}
+.loading-page h2{
+    font-family: "Chewy", system-ui;
+    font-size: 3.5rem;
+    margin-top: 15px;
+}
+.dots{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0.5em;
+    width: 0ch;
+    animation: typing 1.5s steps(3,end) forwards;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 3ch }
+}
+.winner .info{
+    font-size: 6em;
+    font-family: "Chewy", system-ui;
+}
+#reset{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #A45C40;
+    margin-top: 20px;
+    background-color: #E4B7A0;
+    font-family: "Playfair Display", serif;
+    padding: 10px 20px;
+    border: 2px solid #A45C40 !important;
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+
+  .game-container{
+    flex-wrap: wrap;
+  }
+  .game-info{
+    margin-top: 34px;
+  }
+  .game-container .game-info .info{
+    font-size: 1.5em;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3,19vw);
+    grid-template-rows:repeat(3,19vw) ;
+    padding: 5px;
+  }
+  .loading-page h1{
+    font-size: 4rem ;
+    margin: 0px 7px;
+    width: 100%;
+    text-align: center;
+  }
+  .loading-page h2{
+    margin: 0px 7px;
+    width: 100%;
+    text-align: center;
+  }
+}
+#reset:hover {
+  background-color: #d9a88f;
+  cursor: pointer;
+}
